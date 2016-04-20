@@ -89,6 +89,11 @@ describe('trimNonMatchingParentheses', () => {
       { first_line: 0, first_column: 2, last_line: 0, last_column: 13 },
       { first_line: 0, first_column: 2, last_line: 0, last_column: 12 }
     );
+    check(
+      '"a)b"',
+      { first_line: 0, first_column: 2, last_line: 0, last_column: 13 },
+      { first_line: 0, first_column: 2, last_line: 0, last_column: 12 }
+    );
   });
 
   function check(source, loc, expected) {
